@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <section class="content-body">
+        <button class="modal">Click Me!</button>
+        <div class="modal-content">
+            <div class="img-sec">
+                <img src="images/cake.png" alt="" />
+                <h4>Tap on Cake</h4>
+            </div>
+        </div>
+        <div class="wish-body">
+            <div class="balloons">
+                <img src="images/balloon.png" alt="" />
+                <img src="images/balloon.png" alt="" />
+            </div>
+            <div class="wish-content">
+                <div class="wish-content-center">
+                    <img src="images/mahmudul.jpeg" alt="" />
+                    <h2>Happy Birthday To You!</h2>
+                    <h4>Wish you a very happy life</h4>
+                    <p>
+                        You are one of the best teachers I have ever had in my life. You are awesome. Love You, sir. <br /><span>A small effort on the occasion of your birthday.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var modal_btn = document.querySelector(".modal");
+        var modal_cntent = document.querySelector(".modal-content");
+        var cake = document.querySelector(".img-sec");
+        var wish_body = document.querySelector(".wish-body");
+        modal_btn.onclick = function () {
+            modal_btn.style.display = "none";
+            modal_cntent.style.display = "block";
+        }
+        cake.onclick = function () {
+            cake.style.display = "none";
+            wish_body.style.display = "block";
+        }
+
+    </script>
+</body>
+</html>
